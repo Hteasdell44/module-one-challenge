@@ -1,30 +1,42 @@
+/* The following code sets the box sizing, padding, and margin for all HTML elements on the page. */
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* The following code sets the background color for the body. */
+
 body {
     background-color: #d9dcd6;
 }
 
-.header {
+/* The following code sets the padding, font, background color, and text of the header. */
+
+#header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
 }
 
-.header h1 {
+/* The following code sets the display style and font size for h1 elements in the header. */
+
+#header h1 {
     display: inline-block;
     font-size: 48px;
 }
 
-.header h1 .seo {
+/* The following code sets the font color for the span tag given an id of seo within h1 elements in the header. */
+
+#header h1 #seo {
     color: #d9dcd6;
 }
 
-.header div {
+/* The following code sets the padding, margin, float style, font, and font size for div elements in the header. */
+
+#header div {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -32,25 +44,35 @@ body {
     font-size: 20px;
 }
 
-.header div ul {
+/* The following code sets the list style type of the unordered list within the div in the header to none. */
+
+#header div ul {
     list-style-type: none;
 }
 
-.header div ul li {
+/* The following code sets the display type and margin of the items in the unordered list within the div in the header. */
+
+#header div ul li {
     display: inline-block;
     margin-left: 25px;
 }
+
+/* The following code sets the font color and text decoration of all anchor tags. */
 
 a {
     color: #ffffff;
     text-decoration: none;
 }
 
+/* The following code sets the font size of all paragraph tags. */
+
 p {
     font-size: 16px;
 }
 
-.hero {
+/* The following code sets the height, width, margin, background image, and the positioning of the large hero image. */
+
+#hero {
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
@@ -59,23 +81,31 @@ p {
     background-position: center;
 }
 
+/* The following code sets the float positioning and margin allowing the first and third picture to be offset to the left. */
+
 .float-left {
     float: left;
     margin-right: 25px;
 }
+
+/* The following code sets the float positioning and margin allowing the second picture to be offset to the right. */
 
 .float-right {
     float: right;
     margin-left: 25px;
 }
 
-.content {
+/* The following code sets the width, display style, and margin of the section directly below the hero image. */
+
+#content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
-.benefits {
+/* The following code sets the margin, padding, positioning, width, height, font, and background color of the container that holds the three benefit items. */
+
+#benefits {
     margin-right: 20px;
     padding: 20px;
     clear: both;
@@ -86,55 +116,31 @@ p {
     background-color: #2589bd;
 }
 
-.benefit-lead {
+/* The following code sets the margin and text color within the three benefit items. */
+
+.benefit-Item {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
+/* The following code sets the margin and text alignment of the h3 elements within the three benefit items. */
 
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
+.benefit-Item h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
+/* The following code sets the display style, margin and max width of the images within the three benefit items. */
 
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
+.benefit-Item img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
+/* The following code sets the margin, padding, height, font, background color and text color of a section of the article class. */
 
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.search-engine-optimization {
+.article {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -143,63 +149,36 @@ p {
     color: #ffffff;
 }
 
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
+/* The following code sets the margin and font size of all h2 elements within the 3 articles. */
 
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.search-engine-optimization img {
-    max-height: 200px;
-}
-
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
+.article h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
 
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
+/* The following code caps the max height of all images. */
+img {
+    max-height: 200px;
 }
 
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
+/* The following code sets the padding, font, and text alignment of all elements in the footer. */
 
-.footer {
+footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
 
-.footer h2 {
+/* The following code sets the font size of all h2 elements in the footer. */
+
+footer h2 {
     font-size: 20px;
 }
 
-#belowHero, #aside {
+/* The following code causes the section directly below the hero section and the aside to sit side by side. */
+
+#sectionBelowHero, aside {
 
     display: inline;
 }
